@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<VBox alignment="CENTER" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="500.0" spacing="15.0" styleClass="bgMain" stylesheets="@../../CSS/style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.ChatTextController">
+<VBox alignment="CENTER" fillWidth="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="500.0" spacing="15.0" styleClass="bgMain" stylesheets="@../../../CSS/style.css" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.chattext.ChatTextController">
    <HBox alignment="CENTER" prefHeight="34.0" prefWidth="448.0" spacing="10.0">
       <Label prefHeight="18.0" prefWidth="79.0" text="20:50 ">
          <font>
@@ -15,30 +15,30 @@
       </Label>
       <Label prefHeight="18.0" prefWidth="339.0" />
       <ImageView fitHeight="23.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true">
-         <Image url="@../../images/wifi.png" />
+         <Image url="@../../../images/wifi.png" />
       </ImageView>
       <ImageView fitHeight="24.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
-         <Image url="@../../images/battery.png" />
+         <Image url="@../../../images/battery.png" />
       </ImageView>
    </HBox>
-   <HBox alignment="CENTER" fillHeight="false" prefHeight="34.0" prefWidth="451.0" spacing="20.0" styleClass="sendText" stylesheets="@../../CSS/style.css">
+   <HBox alignment="CENTER" fillHeight="false" prefHeight="34.0" prefWidth="451.0" spacing="20.0" styleClass="sendText" stylesheets="@../../../CSS/style.css">
       <Label prefHeight="49.0" prefWidth="279.0" text="Son Tran">
          <font>
             <Font name="Calibri Bold Italic" size="19.0" />
          </font>
       </Label>
       <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
-         <Image url="@../../images/call.png" />
+         <Image url="@../../../images/call.png" />
       </ImageView>
       <ImageView fitHeight="26.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
-         <Image url="@../../images/videogame.png" />
+         <Image url="@../../../images/videogame.png" />
       </ImageView>
    </HBox>
    <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" prefHeight="502.0" prefWidth="454.0" styleClass="bgMain" vbarPolicy="NEVER">
       <VBox.margin>
          <Insets />
       </VBox.margin>
-      <VBox fx:id="layout" nodeOrientation="LEFT_TO_RIGHT" prefHeight="499.0" prefWidth="451.0" spacing="20.0" styleClass="sendText" stylesheets="@../../CSS/style.css">
+      <VBox fx:id="layout" nodeOrientation="LEFT_TO_RIGHT" prefHeight="499.0" prefWidth="451.0" spacing="20.0" styleClass="sendText" stylesheets="@../../../CSS/style.css">
          <padding>
             <Insets left="10.0" />
          </padding>
@@ -46,13 +46,13 @@
    </ScrollPane>
    <HBox alignment="CENTER" fillHeight="false" onKeyPressed="#sendEnterKey" prefHeight="45.0" prefWidth="453.0" spacing="15.0">
       <ImageView fitHeight="25.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
-         <Image url="@../../images/image.png" />
+         <Image url="@../../../images/image.png" />
       </ImageView>
       <TextField fx:id="messageField" prefHeight="34.0" prefWidth="384.0" styleClass="practiceButton" />
       <Button fx:id="sendButton" mnemonicParsing="false" onMouseClicked="#sendAction" prefHeight="23.0" prefWidth="54.0" styleClass="practiceButton">
          <graphic>
             <ImageView fitHeight="21.0" fitWidth="103.0" pickOnBounds="true" preserveRatio="true">
-               <Image url="@../../images/telegram.png" />
+               <Image url="@../../../images/telegram.png" />
             </ImageView>
          </graphic>
       </Button>
