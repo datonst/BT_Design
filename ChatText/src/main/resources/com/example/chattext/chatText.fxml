@@ -18,7 +18,7 @@
          <Image url="@../../../images/wifi.png" />
       </ImageView>
       <ImageView fitHeight="24.0" fitWidth="102.0" pickOnBounds="true" preserveRatio="true">
-         <Image url="@../../../images/battery.png" />
+         <Image url="@../../../images/battery1.png" />
       </ImageView>
    </HBox>
    <HBox alignment="CENTER" fillHeight="false" prefHeight="34.0" prefWidth="451.0" spacing="20.0" styleClass="sendText" stylesheets="@../../../CSS/style.css">
@@ -34,7 +34,7 @@
          <Image url="@../../../images/videogame.png" />
       </ImageView>
    </HBox>
-   <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" prefHeight="502.0" prefWidth="454.0" styleClass="bgMain" vbarPolicy="NEVER">
+<!--   <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" prefHeight="502.0" prefWidth="454.0" styleClass="sendText" stylesheets="@../../../CSS/style.css" vbarPolicy="NEVER" >-->
       <VBox.margin>
          <Insets />
       </VBox.margin>
@@ -43,10 +43,10 @@
             <Insets left="10.0" />
          </padding>
       </VBox>
-   </ScrollPane>
+<!--   </ScrollPane>-->
    <HBox alignment="CENTER" fillHeight="false" onKeyPressed="#sendEnterKey" prefHeight="45.0" prefWidth="453.0" spacing="15.0">
       <ImageView fitHeight="25.0" fitWidth="55.0" pickOnBounds="true" preserveRatio="true">
-         <Image url="@../../../images/image.png" />
+         <Image url="@../../../images/upload.png" />
       </ImageView>
       <TextField fx:id="messageField" prefHeight="34.0" prefWidth="384.0" styleClass="practiceButton" />
       <Button fx:id="sendButton" mnemonicParsing="false" onMouseClicked="#sendAction" prefHeight="23.0" prefWidth="54.0" styleClass="practiceButton">

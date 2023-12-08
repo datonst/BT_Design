@@ -14,17 +14,24 @@
 .sendText {
     -fx-font-family: "Arial";
     -fx-font-size: 18px; /* Slightly reduced size */
-    -fx-text-fill: #008080; /* Teal */
+    -fx-text-fill: #ffffff; /* White */
+    -fx-background-color: #ecf0f1; /* Clouds */
     -fx-font-weight: bold;
-    -fx-background-color: #d3e0ea; /* Light Teal */
-    -fx-background-radius: 10px;
+
+    -fx-background-radius: 20px;
     -fx-background-size: 50px;
 }
 
 .bgMain {
     -fx-background-color: #008080; /* Teal */
+    -fx-background-radius: 10px;
+    -fx-background-size: 50px;
 }
 
+.hhox {
+    -fx-background-radius: 10px;
+
+}
 .title {
     -fx-text-fill: white;
     -fx-font-size: 36px; /* Adjusted size */
@@ -62,7 +69,7 @@
     -fx-text-fill: #008080; /* Teal */
     -fx-font-size: 18px; /* Adjusted size */
     -fx-background-color: #d3e0ea; /* Light Teal */
-    -fx-background-radius: 10px;
+    -fx-background-radius: 50px;
 }
 
 .chattext {

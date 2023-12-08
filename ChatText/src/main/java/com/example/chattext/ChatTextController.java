@@ -65,11 +65,13 @@ public class ChatTextController {
         if (!message.isEmpty()) {
             TextArea userTextArea = addText(message,2);
             TextArea chatBoxTextArea = addText(handleChat(message),2);
-            chatBoxTextArea.getStyleClass().add("AI Chat");
-            userTextArea.getStyleClass().add("user");
+//            chatBoxTextArea.getStyleClass().add("hhox");
+//            userTextArea.getStyleClass().add("user");
+            userTextArea.getStyleClass().add("hhox");
+
             HBox userChatHBox = createChat("You :", userTextArea);
             HBox chatBoxAutoHBox = createChatAuto("AI Chat", chatBoxTextArea);
-
+//            userChatHBox.getStyleClass().add("hhox");
             layout.getChildren()
                     .add(userChatHBox);
             animateMessage(userChatHBox);
@@ -77,6 +79,7 @@ public class ChatTextController {
                     .add(chatBoxAutoHBox);
             // Clear the message field
             messageField.clear();
+
 
             // Scroll to the bottom of the VBox (if you want to always show the latest messages)
             chatPane.layout();
