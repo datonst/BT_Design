@@ -21,23 +21,16 @@
          <Image url="@../../../images/battery1.png" />
       </ImageView>
    </HBox>
-   <HBox alignment="CENTER" fillHeight="false" prefHeight="34.0" prefWidth="451.0" spacing="20.0" styleClass="sendText" stylesheets="@../../../CSS/style.css">
-      <Label prefHeight="49.0" prefWidth="279.0" text="Son Tran">
+   <HBox alignment="CENTER" cache="true" fillHeight="false" prefHeight="34.0" prefWidth="120.0" spacing="20.0" styleClass="sendText" stylesheets="@../../../CSS/style.css">
+      <Label alignment="CENTER" prefHeight="49.0" prefWidth="279.0" text="Son Tran">
          <font>
             <Font name="Calibri Bold Italic" size="19.0" />
          </font>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
       </Label>
-      <ImageView fitHeight="25.0" fitWidth="28.0" pickOnBounds="true" preserveRatio="true">
-         <Image url="@../../../images/call.png" />
-      </ImageView>
-      <ImageView fitHeight="26.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
-         <Image url="@../../../images/videogame.png" />
-      </ImageView>
    </HBox>
-<!--   <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" prefHeight="502.0" prefWidth="454.0" styleClass="sendText" stylesheets="@../../../CSS/style.css" vbarPolicy="NEVER" >-->
-      <VBox.margin>
-         <Insets />
-      </VBox.margin>
       <VBox fx:id="layout" nodeOrientation="LEFT_TO_RIGHT" prefHeight="499.0" prefWidth="451.0" spacing="20.0" styleClass="sendText" stylesheets="@../../../CSS/style.css">
          <padding>
             <Insets left="10.0" />
@@ -57,4 +50,8 @@
          </graphic>
       </Button>
    </HBox>
+<!--   <ScrollPane fx:id="scrollPane" hbarPolicy="NEVER" prefHeight="502.0" prefWidth="454.0" styleClass="sendText" stylesheets="@../../../CSS/style.css" vbarPolicy="NEVER" >-->
+      <VBox.margin>
+         <Insets />
+      </VBox.margin>
 </VBox>
