@@ -22,6 +22,18 @@
     -fx-background-size: 50px;
 }
 
+.textA {
+    -fx-font-family: "Arial";
+    -fx-font-size: 18px; /* Slightly reduced size */
+    /*-fx-text-fill: #ffffff; !* White *!*/
+    -fx-background-color: red; /* Clouds */
+    -fx-font-weight: bold;
+
+    -fx-background-radius: 20px;
+    -fx-background-size: 50px;
+}
+
+
 .bgMain {
     -fx-background-color: #008080; /* Teal */
     -fx-background-radius: 10px;

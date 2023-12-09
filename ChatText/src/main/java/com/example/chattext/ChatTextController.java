@@ -67,13 +67,14 @@ public class ChatTextController {
             TextArea chatBoxTextArea = addText(handleChat(message),2);
 //            chatBoxTextArea.getStyleClass().add("hhox");
 //            userTextArea.getStyleClass().add("user");
-            userTextArea.getStyleClass().add("hhox");
+
 
             HBox userChatHBox = createChat("You :", userTextArea);
             HBox chatBoxAutoHBox = createChatAuto("AI Chat", chatBoxTextArea);
 //            userChatHBox.getStyleClass().add("hhox");
             layout.getChildren()
                     .add(userChatHBox);
+//            userChatHBox.setPrefSize(messageField.getPrefWidth(),10);
             animateMessage(userChatHBox);
             layout.getChildren()
                     .add(chatBoxAutoHBox);
@@ -92,8 +93,10 @@ public class ChatTextController {
         textArea.setEditable(false);
         textArea.setWrapText(true);
         textArea.setPrefRowCount(numberOfLines);
-        textArea.setMaxWidth(layout.getPrefWidth() - 100);
-        textArea.setMinHeight(Region.USE_PREF_SIZE);  // This allows the TextArea to shrink if the content is smaller
+        textArea.setMaxWidth(layout.getPrefWidth() - 200);
+        textArea.setMaxHeight(50);
+
+        textArea.setMinHeight(50);  // This allows the TextArea to shrink if the content is smaller
         return textArea;
     }
 
